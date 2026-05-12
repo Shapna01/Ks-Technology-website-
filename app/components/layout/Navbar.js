@@ -23,15 +23,22 @@ export default function Navbar() {
           />
         </div>
 
-        <ul className="hidden lg:flex items-center gap-10 text-gray-600 font-medium">
+        <ul className="hidden lg:flex items-center  gap-10 text-gray-600 font-medium">
 
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/platforms">Platforms</Link></li>
-          <li><Link href="/usecases">Use Cases</Link></li>
-          <li><Link href="/investors">Investors</Link></li>
-          <li><Link href="/blogs">Blogs</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Home</Link></li>
+          <li><Link href="/about" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>About</Link></li>
+          <li><Link href="/platforms" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Platforms</Link></li>
+          <li><Link href="/usecases"  className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Use Cases</Link></li>
+          <li><Link href="/investors" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Investors</Link></li>
+          <li><Link href="/blogs" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Blogs</Link></li>
+          <li><Link href="/contact" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
+>Contact</Link></li>
 
         </ul>
 
