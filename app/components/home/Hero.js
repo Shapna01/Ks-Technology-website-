@@ -121,7 +121,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <div className="space-y-4 w-[400px] ">
+             <div className="space-y-4 w-full sm:w-[400px]">
                 {[
                   "Sensing Layer",
                   "Intelligence Layer",
@@ -274,7 +274,7 @@ export default function Hero() {
               <div className="absolute bottom-[-35px] right-[-35px] bg-white rounded-[24px] px-10 py-8 shadow-2xl">
                 
                 <h2 className="text-[#A855F7] text-5xl font-black">
-                  50+
+                  50+  
                 </h2>
 
                 <p className="text-gray-400 mt-2">
@@ -298,7 +298,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <h2 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
         The Intelligence Architecture
       </h2>
 
@@ -670,7 +670,7 @@ export default function Hero() {
     <div className="flex items-center justify-center gap-3 mb-5">
       <div className="w-10 h-[2px] bg-[#D28BFF]"></div>
 
-      <p className="text-[#D8A8FF] uppercase tracking-[4px] text-[11px] sm:text-sm font-semibold">
+      <p className="text-[#D8A8FF] uppercase tracking-[4px] text-[9px] sm:text-sm font-semibold">
         Our Mission
       </p>
     </div>

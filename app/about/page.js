@@ -10,7 +10,7 @@ export default function AboutPage() {
       <Navbar />
     <div >
       <PageHero
-  badge="Who We Are"
+  badge="— Who We Are"
   title="About KS Smart"
   description="A strategic intelligence systems provider focused on enabling intelligence-led governance across India."
 /></div>
@@ -40,10 +40,10 @@ export default function AboutPage() {
               Our Story
             </p>
 
-            <h2 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+            <h2 className="text-3xl sm:text-3xl  font-bold text-black mt-6 lg:mt-8 leading-tight">
               Built for the Complexity of Governance
             </h2>
-<br />
+             <br />
             <div className="space-y-6 text-gray-500 text-lg leading-9">
               <p>
                 KS Smart Technologies Ltd is a strategic techno solutions
@@ -80,7 +80,7 @@ export default function AboutPage() {
         Our Principles
       </p>
 
-      <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+      <h2 className="text-3xl sm:text-4xl  font-bold text-black mt-6 lg:mt-8 leading-tight">
         What Drives Us
       </h2>
     </div>
@@ -149,14 +149,13 @@ export default function AboutPage() {
         Our Journey
       </p>
 
-      <h2 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+      <h2 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
         Building Intelligence Since 2016
       </h2>
     </div>
 
     <div className="relative max-w-4xl mx-auto">
-
-<div className="absolute left-5 sm:left-4 top-0 w-[3px] h-full bg-[#A855F7] rounded-full"></div>
+      <div className="absolute left-5 sm:left-4 top-0 w-[3px] h-full bg-[#A855F7] rounded-full"></div>
       <div className="space-y-12 sm:space-y-16">
 
         {[
@@ -195,26 +194,29 @@ export default function AboutPage() {
             desc: "Developing predictive modelling and risk forecasting systems — enabling proactive governance for the first time.",
             icon: "📈",
           },
-        ].map((item, index) => (
+            ].map((item, index) => (
           <div
             key={index}
             className="relative flex gap-4 sm:gap-8"
           >
-
-            <div className="relative z-2 flex items-center justify-center 
-        w-8 h-8 sm:w-11 sm:h-8 
-        rounded-full bg-[#A855F7] 
-        text-white text-xs sm:text-sm 
-        shadow-md border-2 border-white">
-          {item.icon}
-        </div>
+            <div 
+            className="relative z-2 flex items-center justify-center
+            min-w-[40px] min-h-[40px]
+            w-[40px] h-[40px]
+            rounded-full bg-[#A855F7]
+            text-white text-sm
+            shadow-md border-2 border-white
+            flex-shrink-0"
+            >
+                {item.icon}
+            </div>
 
             <div className="pb-2 sm:pb-4">
               <p className="text-[#A855F7] uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-sm font-bold mb-2 sm:mb-3">
                 {item.year} — {item.tag}
               </p>
 
-              <h3 className="text-3xl sm:text-2xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+              <h3 className="text-2xl sm:text-2xl  font-bold text-black mt-6 lg:mt-8 leading-tight">
                 {item.title}
               </h3>
 

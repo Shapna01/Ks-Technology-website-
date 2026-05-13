@@ -10,7 +10,7 @@ export default function IntelligencePlatformPage() {
       <Navbar />
 <div >
       <PageHero
-  badge="OUR CAPABILITIES"
+  badge="— OUR CAPABILITIES"
   title="Intelligence Platforms"
   description="Four integrated platforms that form the complete intelligence layer
             for government systems."

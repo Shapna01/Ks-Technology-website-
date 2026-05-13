@@ -95,7 +95,7 @@ export default function Usecase() {
       <Navbar />
 <div >
       <PageHero
-  badge="REAL DEPLOYMENTS"
+  badge="— REAL DEPLOYMENTS"
   title="Use Cases"
   description="Documented outcomes from our intelligence platform deployments across Indian government systems."
 />

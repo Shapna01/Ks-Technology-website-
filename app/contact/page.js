@@ -34,7 +34,7 @@ export default function ContactPage() {
 
       <div >
       <PageHero
-  badge="GET IN TOUCH"
+  badge="— GET IN TOUCH"
   title="Contact Us"
   description="Reach out to discuss how KS Smart can build intelligence into your government systems."
 /></div>
