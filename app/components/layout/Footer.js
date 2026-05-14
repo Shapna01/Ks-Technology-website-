@@ -11,14 +11,14 @@ export default function Footer() {
       
             <div>
               <div className="flex items-center">
-        <Image
-          src="/ks.png"
-          alt="KS Smart Logo"
-          width={140}
-          height={40}
-          priority
-        />
-      </div>
+                <Image 
+                src="/ks.png"
+                alt="KS Smart Logo"
+                width={140}
+                height={40}
+                priority
+                />
+              </div>
       
               <p className="text-gray-400 text-lg leading-8 mt-6">
                 Strategic intelligence systems for government authorities.

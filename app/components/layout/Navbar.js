@@ -25,20 +25,13 @@ export default function Navbar() {
 
         <ul className="hidden lg:flex items-center  gap-10 text-gray-600 font-medium">
 
-          <li><Link href="/" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Home</Link></li>
-          <li><Link href="/about" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->About</Link></li>
-          <li><Link href="/platforms" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Platforms</Link></li>
-          <li><Link href="/usecases"  className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Use Cases</Link></li>
-          <li><Link href="/investors" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Investors</Link></li>
-          <li><Link href="/blogs" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Blogs</Link></li>
-          <li><Link href="/contact" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300"
->Contact</Link></li>
+          <li><Link href="/" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Home</Link></li>
+          <li><Link href="/about" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">About</Link></li>
+          <li><Link href="/platforms" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Platforms</Link></li>
+          <li><Link href="/usecases"  className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Use Cases</Link></li>
+          <li><Link href="/investors" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Investors</Link></li>
+          <li><Link href="/blogs" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Blogs</Link></li>
+          <li><Link href="/contact" className="px-4 py-2 rounded-full hover:bg-[#F3E8FF] hover:text-[#A855F7] transition duration-300">Contact</Link></li>
 
         </ul>
 
@@ -46,23 +39,20 @@ export default function Navbar() {
           Get in Touch →
         </button>
 
-       <button
-  onClick={() => setOpen(!open)}
-  className="lg:hidden text-black"
->
-  {open ? <X size={30} /> : <Menu size={30} />}
-</button>
-      </div>
-
-      <div
-  className={`fixed top-20 left-0 w-full bg-white shadow-lg overflow-hidden transition-all duration-300 z-50 ${
-    open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-  }`}
->
+       <button 
+       onClick={() => setOpen(!open)}
+       className="lg:hidden text-black"
+       >
+        {open ? <X size={30} /> : <Menu size={30} />}
+        </button>
+        </div>
+        <div 
+        className={`fixed top-20 left-0 w-full bg-white shadow-lg overflow-hidden transition-all duration-300 z-50 ${
+          open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
         <div className="flex items-center justify-between p-4 text-gray-400 ">
-          <h2 className="font-bold text-xl">Menu</h2>
-
-          
+          <h2 className="font-bold text-xl">Menu</h2>         
         </div>
 
         <div className="flex flex-col p-6 gap-6 text-gray-700 font-medium">

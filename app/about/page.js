@@ -8,12 +8,13 @@ export default function AboutPage() {
   return (
     <main className="w-full bg-white">
       <Navbar />
-    <div >
+      <div >
       <PageHero
-  badge="— Who We Are"
-  title="About KS Smart"
-  description="A strategic intelligence systems provider focused on enabling intelligence-led governance across India."
-/></div>
+      badge="— Who We Are"
+      title="About KS Smart"
+      description="A strategic intelligence systems provider focused on enabling intelligence-led governance across India."
+      />
+      </div>
 
       <section className="w-full py-28">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-20 items-center">
@@ -24,8 +25,8 @@ export default function AboutPage() {
               “
             </div>
 
-            <h3 className="text-2xl font-bold leading-[1.5] max-w-lg ">
-              We are not implementing inf rastructure.
+            <h3 className="text-3xl font-bold leading-[1.5] max-w-lg ">
+              We are not implementing infrastructure.
               <br />
               We are converting infrastructure into intelligence.
             </h3>

@@ -5,7 +5,7 @@ export default function PageHero({
 }) {
   return (
     <section className="w-full bg-[#F8F3FB]">
-<div className="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-10  pt-40 pb-20 lg:pt-44 lg:pb-24 text-center">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-10  pt-40 pb-20 lg:pt-44 lg:pb-24 text-center">
         <p className="text-[#A855F7] uppercase tracking-[4px] text-xs sm:text-sm font-semibold mb-5">
           {badge}
         </p>

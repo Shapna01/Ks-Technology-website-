@@ -31,15 +31,14 @@ export default function ContactPage() {
   return (
     <main className="w-full bg-white overflow-hidden">
       <Navbar />
-
       <div >
       <PageHero
-  badge="— GET IN TOUCH"
-  title="Contact Us"
-  description="Reach out to discuss how KS Smart can build intelligence into your government systems."
-/></div>
+      badge="— GET IN TOUCH"
+      title="Contact Us"
+      description="Reach out to discuss how KS Smart can build intelligence into your government systems."
+      />
+      </div>
 
-      
       <section className="w-full bg-white py-16 lg:py-24">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-10">
           
@@ -222,8 +221,6 @@ export default function ContactPage() {
                     className="w-full rounded-xl border border-gray-300 bg-white px-4 py-4 outline-none resize-none focus:border-[#A855F7]"
                   />
                 </div>
-
-                
                 <button
                   type="submit"
                   className="w-full h-14 rounded-full bg-[#A855F7] text-white font-semibold text-lg hover:bg-[#9333EA] transition"

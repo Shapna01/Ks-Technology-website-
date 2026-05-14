@@ -93,32 +93,32 @@ export default function Usecase() {
   return (
     <main className="w-full bg-white">
       <Navbar />
-<div >
+      <div >
       <PageHero
-  badge="— REAL DEPLOYMENTS"
-  title="Use Cases"
-  description="Documented outcomes from our intelligence platform deployments across Indian government systems."
-/>
-</div>
-<section
-  className="w-full py-24"
-  style={{ backgroundColor: "#FFFFFF" }}
->
-  <div className="max-w-7xl mx-auto px-6">
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20"> 
-    {useCases.map((item, index) => (
-        <div
-          key={index}
-          className="bg-white overflow-hidden w-[600px] h-auto min-h-[400px] mx-auto"
-          style={{
-            border: "1px solid #E8DDF4",
-            borderRadius: "24px",
-            padding: "0px",
-            maxWidth: "1000px",
-            minHeight: "auto",
-            margin: "0 auto",
-          }}
-        >
+       badge="— REAL DEPLOYMENTS"
+       title="Use Cases"
+       description="Documented outcomes from our intelligence platform deployments across Indian government systems."
+      />
+      </div>
+      <section
+      className="w-full py-24"
+      style={{ backgroundColor: "#FFFFFF" }}
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20"> 
+            {useCases.map((item, index) => (
+              <div
+               key={index}
+               className="bg-white overflow-hidden w-[600px] h-auto min-h-[400px] mx-auto"
+               style={{
+                 border: "1px solid #E8DDF4",
+                 borderRadius: "24px",
+                 padding: "0px",
+                 maxWidth: "1000px",
+                 minHeight: "auto",
+                 margin: "0 auto",
+                }}
+              >
           <div
             className="flex items-center justify-between px-5"
             style={{
@@ -272,13 +272,14 @@ export default function Usecase() {
   <div className="relative z-10 max-w-[1000px] mx-auto px-6 text-center">
 
     <h2 className="text-3xl sm:text-3xl lg:text-5xl font-black text-white leading-tight">
-Have a governance challenge
-   <br />we should solve?      
+    Have a governance challenge
+    <br />
+    we should solve?      
     </h2>
 
     <p className="text-[#D8B4FE] text-xl leading-9 mt-8 max-w-3xl mx-auto">
       Tell us about your infrastructure and objectives. We'll show you how
-intelligence can transform it.
+      intelligence can transform it.
     </p>
 
     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-14">

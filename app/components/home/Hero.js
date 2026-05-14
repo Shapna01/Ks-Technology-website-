@@ -188,7 +188,7 @@ export default function Hero() {
           • SITUATIONAL AWARENESS
         </marquee>
       </div>
-<section className="w-full bg-white px-4 sm:px-6 md:px-10 lg:px-16 py-24">
+      <section className="w-full bg-white px-4 sm:px-6 md:px-10 lg:px-16 py-24">
         <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-20">
           
           <div className="flex-1 py-6 sm:py-0">
@@ -205,7 +205,7 @@ export default function Hero() {
               <br />
               to Intelligence
             </h2>
-<br />
+            <br />
             <p className="text-gray-500 text-base sm:text-lg leading-8 sm:leading-9">
               KS Smart Technologies Ltd operates at the intersection of
               infrastructure, data, and analytics — transforming large-scale
@@ -307,8 +307,7 @@ export default function Hero() {
         data into actionable government intelligence.
       </p>
     </div>
-
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 sm:mt-16 lg:mt-20 rounded-[32px] overflow-hidden border border-[#EFE7F6] bg-white shadow-sm">      {[
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 sm:mt-16 lg:mt-20 rounded-[32px] overflow-hidden border border-[#EFE7F6] bg-white shadow-sm">      {[
         {
           number: "01",
           title: "Sensing Layer",
@@ -401,8 +400,6 @@ export default function Hero() {
   </div>
 </section>
 
-
-
 <section className="w-full bg-[#F8F2FC] px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-15 lg:py-20  ">
   <div className="max-w-[1400px] mx-auto">
     
@@ -415,9 +412,9 @@ export default function Hero() {
           Impact Areas
         </p>
       </div>
-
-<h2 className="text-[24px] leading-[40px] sm:text-4xl md:text-6xl lg:text-[64px] lg:leading-[72px] font-black text-black px-4">  Where Intelligence Meets Governance
-</h2>
+      <h2 className="text-[24px] leading-[40px] sm:text-4xl md:text-6xl lg:text-[64px] lg:leading-[72px] font-black text-black px-4">  
+        Where Intelligence Meets Governance
+      </h2>
 
       <p className="text-gray-500 text-base sm:text-lg lg:text-xl leading-8 sm:leading-9 mt-6 max-w-[760px] mx-auto px-2">
         Enabling smarter decisions across the most critical domains
@@ -466,21 +463,19 @@ export default function Hero() {
           <div className="relative z-10 w-14 h-14 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center text-white text-2xl">
             {item.icon}
           </div>
-
           <h3 className="relative z-10 text-white text-[24px] leading-[32px] sm:text-[28px] sm:leading-[38px] lg:text-[34px] lg:leading-[42px] font-bold mt-10 max-w-[420px]">
-  {item.title}
-</h3>
+            {item.title}
+            </h3>
 
           <p className="relative z-10 text-[#D8C8F2] text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 mt-6 max-w-[520px]">
-  {item.desc}
-</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-<section className="w-full bg-[#A63FD9] py-20 px-4 sm:px-6 md:px-10 lg:px-16">
+            {item.desc}
+            </p>
+            </div>
+          ))}
+          </div>
+          </div>
+          </section>
+  <section className="w-full bg-[#A63FD9] py-20 px-4 sm:px-6 md:px-10 lg:px-16">
   <div className="max-w-[1400px] mx-auto">
     
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center">
@@ -663,8 +658,8 @@ export default function Hero() {
     </div>
   </div>
 </section>
-     
-     <section className="w-full bg-[#2B0057] px-4 sm:px-6 md:px-10 lg:px-16 pt-14 sm:pt-20 lg:pt-28 pb-10 sm:pb-14 overflow-hidden">
+
+<section className="w-full bg-[#2B0057] px-4 sm:px-6 md:px-10 lg:px-16 pt-14 sm:pt-20 lg:pt-28 pb-10 sm:pb-14 overflow-hidden">
   <div className="max-w-[1400px] mx-auto text-center">
     
     <div className="flex items-center justify-center gap-3 mb-5">
@@ -674,8 +669,7 @@ export default function Hero() {
         Our Mission
       </p>
     </div>
-
-<h2 className="text-white text-[34px] leading-[52px] sm:text-3xl md:text-6xl lg:text-[70px] lg:leading-[82px] font-black max-w-[1100px] mx-auto px-2">      We don't just deploy systems.
+    <h2 className="text-white text-[34px] leading-[52px] sm:text-3xl md:text-6xl lg:text-[70px] lg:leading-[82px] font-black max-w-[1100px] mx-auto px-2">      We don't just deploy systems.
       <br />
       We build intelligence into them.
     </h2>
@@ -687,7 +681,6 @@ export default function Hero() {
     </p>
 
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-10 sm:mt-14">
-      
       <button className="w-full sm:w-auto px-8 sm:px-10 py-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-[#2B0057] transition duration-300">
         Explore Platforms
       </button>

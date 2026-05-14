@@ -8,13 +8,13 @@ export default function IntelligencePlatformPage() {
   return (
     <main className="w-full bg-white overflow-x-hidden">
       <Navbar />
-<div >
+      <div >
       <PageHero
-  badge="— OUR CAPABILITIES"
-  title="Intelligence Platforms"
-  description="Four integrated platforms that form the complete intelligence layer
-            for government systems."
-/></div>
+       badge="— OUR CAPABILITIES"
+       title="Intelligence Platforms"
+       description="Four integrated platforms that form the complete intelligence layer for government systems."
+      />
+      </div>
       
 
       <section className="w-full py-16 lg:py-24 bg-white">
@@ -26,9 +26,9 @@ export default function IntelligencePlatformPage() {
                 Platform 01
               </div>
 
-              <h2 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
                 Urban Intelligence Platform
-              </h2>
+                               </h2>
 
               <p className="text-gray-500 text-base sm:text-lg leading-7 sm:leading-9 mt-6 md:mt-8 max-w-[620px]">
                 Enables real-time traffic analytics, violation detection, and
@@ -573,8 +573,7 @@ export default function IntelligencePlatformPage() {
           </div>
 
         </div>
-      </section>
-
+      </section>   
       <section className="w-full bg-gradient-to-br from-[#2D0B59] via-[#4C1D95] to-[#6D28D9] py-16 md:py-24 lg:py-28 overflow-hidden relative">
         <div className="absolute w-[500px] h-[500px] bg-[#A855F7]/20 blur-[120px] rounded-full top-[-120px] left-1/2 -translate-x-1/2"></div>
 
