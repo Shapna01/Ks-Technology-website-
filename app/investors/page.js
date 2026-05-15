@@ -11,6 +11,7 @@ export default function InvestorsPage() {
   const [activeMenu, setActiveMenu] = useState(
     "Corporate Governance"
   );
+  const [activeTab, setActiveTab] = useState("");
 
   const menuItems = {
     "Annual Reports": {
@@ -31,35 +32,71 @@ export default function InvestorsPage() {
     },
 
     "Financial Info": {
-      title: "Financial Info",
-      tabs: [
-        "Quarterly Results",
-        "Subsidiaries Financials/ Secretarial Audit report",
-        "Related Party Transactions",
-        "Statement of Deviation & Variation",
-      ],
-      files: [
-        "Quarter 1 Results",
-        "Quarter 2 Results",
-        "Quarter 3 Results",
-        "Quarter 4 Results",
-      ],
-    },
+  title: "Financial Info",
 
-    "Corporate Governance": {
-      title: "Corporate Governance",
-      tabs: [
-        "Reports",
-        "Authorised KMPs for Disclosures",
-        "Board of Directors",
-        "Composition of Committees",
-      ],
-      files: [
-        "CG Report for the FY",
-        
-      ],
-    },
+  tabs: [
+    "Quarterly Results",
+    "Subsidiaries Financials/ Secretarial Audit report",
+    "Related Party Transactions",
+    "Statement of Deviation & Variation",
+  ],
 
+  files: {
+    "Quarterly Results": [
+      "Quarter 1 Results",
+      "Quarter 2 Results",
+      "Quarter 3 Results",
+      "Quarter 4 Results",
+    ],
+
+    "Subsidiaries Financials/ Secretarial Audit report": [
+      "Financials of the Subsdiary along with Secretairal Audit report",
+    ],
+
+    "Related Party Transactions": [
+      "Half Yearly RPT disclosure",
+      "Half Yearly RPT disclosure",
+    ],
+
+    "Statement of Deviation & Variation": [
+      "Statement of Deviation and Variation ",
+    ],
+  },
+},
+
+  "Corporate Governance": {
+  title: "Corporate Governance",
+
+  tabs: [
+    "Reports",
+    "Authorised KMPs for Disclosures",
+    "Board of Directors",
+    "Composition of Committees",
+  ],
+
+  files: {
+    Reports: [
+      "CG Report for the FY",
+      "Governance Report 2025",
+    ],
+
+    "Authorised KMPs for Disclosures": [
+      "Authorised KMP List",
+      "Disclosure Contact Details",
+    ],
+
+    "Board of Directors": [
+      "Board Members 2025",
+      "Director Profiles",
+    ],
+
+    "Composition of Committees": [
+      "Audit Committee",
+      "Nomination Committee",
+      "Stakeholders Relationship Committee",
+    ],
+  },
+},
     "Open Offer": {
       title: "Open Offer",
       files: [
@@ -86,21 +123,79 @@ export default function InvestorsPage() {
       ],
     },
 
-    "Stock Exchange Disclosures": {
-      title: "Stock Exchange Disclosures",
-      files: [
-        "Board Meeting Intimation",
-        "Board Meeting Intimation",
-      ],
-    },
 
-    "AGM/EGM Documents": {
-      title: "AGM/EGM Documents",
-      files: [
-        "Notice of the AGMs/EGMs",
-        "Notice of the AGMs/EGMs",
-      ],
-    },
+"Stock Exchange Disclosures": {
+  title: "Stock Exchange Disclosures",
+
+  tabs: [
+    "Board Meeting Intimation",
+    "Investor/Analyst Meets",
+    "Shareholding Pattern",
+    "Secretarial Compliance Report",
+  ],
+
+  files: {
+    "Board Meeting Intimation": [
+      "Board Meeting Intimation ",
+      "Board Meeting Intimation ",
+    ],
+
+    "Investor/Analyst Meets": [
+      "Investor Meet Presentation",
+      "Analyst Meeting Schedule",
+    ],
+
+    "Shareholding Pattern": [
+      "Shareholding Pattern June 2025",
+      "Shareholding Pattern March 2025",
+    ],
+
+    "Secretarial Compliance Report": [
+      "Secretarial Compliance Report 2025",
+      "Secretarial Compliance Report 2024",
+    ],
+  },
+},
+
+"AGM/EGM Documents": {
+  title: "AGM/EGM Documents",
+
+  tabs: [
+    "Notice of the AGMs/EGMs",
+    "Scrutinizer's Reports",
+    "MGT 7s",
+    "Proceedings of the AGM/EGMs",
+    "AGM/EGM video Recording",
+  ],
+
+  files: {
+    "Notice of the AGMs/EGMs": [
+      "Notice of the AGMs/EGMs",
+      "Notice of the AGMs/EGMs",
+    ],
+
+    "Scrutinizer's Reports": [
+      "Scrutinizer Report AGM ",
+      "Scrutinizer Report EGM ",
+    ],
+
+    "MGT 7s": [
+      "MGT 7 Annual Return ",
+      "MGT 7 Annual Return ",
+    ],
+
+    "Proceedings of the AGM/EGMs": [
+      "AGM Proceedings ",
+      "EGM Proceedings ",
+    ],
+
+    "AGM/EGM video Recording": [
+      "AGM Video Recording",
+      "EGM Video Recording",
+    ],
+  },
+},
+
 
     "Postal Ballot": {
       title: "Postal Ballot",
@@ -129,7 +224,7 @@ export default function InvestorsPage() {
   };
 
   return (
-    <main className="w-full bg-white min-h-screen overflow-hidden">
+    <main className="w-full  bg-white min-h-screen overflow-hidden">
       
       <Navbar />
 
@@ -139,7 +234,7 @@ export default function InvestorsPage() {
         description="Financial insights, regulatory disclosures, and shareholder information—clearly organized and easy to access."
       />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-14">
+      <section className=" text-3xl max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-14">
         
         <aside>
           <div className="space-y-3">
@@ -147,7 +242,7 @@ export default function InvestorsPage() {
               <button
                 key={index}
                 onClick={() => setActiveMenu(item)}
-                className={`w-full text-left px-5 py-4 rounded-xl text-sm font-medium transition duration-300 ${
+                className={`w-full text-left px-3 py-4 rounded-xl text-sm font-medium transition duration-500 ${
                   activeMenu === item
                     ? "bg-[#6B21A8] text-white"
                     : "text-gray-600 hover:bg-purple-50"
@@ -163,57 +258,68 @@ export default function InvestorsPage() {
           
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
             
-            <h2 className="text-2xl sm:text-2xl font-bold text-gray-900">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               {menuItems[activeMenu].title}
             </h2>
 
-            <select className="border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none">
-              <option>2025 - 2026</option>
-              <option>2024 - 2025</option>
-              <option>2023 - 2024</option>
+            {activeMenu !== "Open Offer" &&
+            activeMenu !== "Shareholders Meeting" && (
+            <select className="border border-gray-200 text-black rounded-lg px-4 py-3 text-sm outline-none">
+                <option>2025 - 2026</option>
+                <option>2024 - 2025</option>
+                <option>2023 - 2024</option>
             </select>
-          </div>
+        )}
+        </div>
 
-          {menuItems[activeMenu].tabs && (
+        {menuItems[activeMenu].tabs && (
             <div className="flex flex-wrap gap-3 mt-10 border-b border-gray-200 pb-5">
-              {menuItems[activeMenu].tabs.map((tab, index) => (
-                <button
-                  key={index}
-                  className={`px-5 py-2 rounded-lg text-sm font-medium transition ${
-                    index === 0
-                      ? "bg-purple-100 text-[#7E22CE]"
-                      : "text-gray-500 hover:bg-gray-100"
-                  }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-          )}
+                {menuItems[activeMenu].tabs.map((tab, index) => (
+                    <button
+                    key={index}
+                    onClick={() => setActiveTab(tab)}
+                    className={`px-5 py-2 rounded-lg text-sm font-medium transition ${
+                    activeTab === tab || (index === 0 && activeTab === "")
+                    ? "bg-purple-100 text-[#7E22CE]"
+                    : "text-gray-500 hover:bg-gray-100"
+                }`}
+            >
+                 {tab}
+                 </button>
+                ))}
+                </div>
+            )}
 
           <div className="mt-10 space-y-5">
-            {menuItems[activeMenu].files.map((file, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:shadow-md transition duration-300"
-              >
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {file}
-                  </h3>
-                </div>
+  {(
+    menuItems[activeMenu].tabs
+      ? menuItems[activeMenu].files[
+          activeTab || menuItems[activeMenu].tabs[0]
+        ] || []
+      : menuItems[activeMenu].files || []
+  ).map((file, index) => (
+    <div
+      key={index}
+      className="border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:shadow-md transition duration-300"
+    >
+      <div>
+        <h3 className="text-lg font-semibold text-gray-900">
+          {file}
+        </h3>
+      </div>
 
-                <a
-                  href="/sample.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 px-5 py-3 rounded-xl text-sm font-semibold hover:bg-[#581C87] transition duration-300 w-fit"
-                >
-                  <Download size={18} />
-                  .pdf
-                </a>
-              </div>
-            ))}
+      <a
+        href="/sample.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-blue-600 px-5 py-3 rounded-xl text-sm font-semibold hover:text-purple-700 transition duration-300 w-fit"
+      >
+        <Download size={18} />
+        .pdf
+      </a>
+    </div>
+  ))}
+
           </div>
         </div>
       </section>

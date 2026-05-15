@@ -573,7 +573,7 @@ export default function IntelligencePlatformPage() {
           </div>
 
         </div>
-      </section>   
+      </section>
       <section className="w-full bg-gradient-to-br from-[#2D0B59] via-[#4C1D95] to-[#6D28D9] py-16 md:py-24 lg:py-28 overflow-hidden relative">
         <div className="absolute w-[500px] h-[500px] bg-[#A855F7]/20 blur-[120px] rounded-full top-[-120px] left-1/2 -translate-x-1/2"></div>
 
