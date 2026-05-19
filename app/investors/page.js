@@ -12,7 +12,7 @@ export default function InvestorsPage() {
     "Corporate Governance"
   );
   const [activeTab, setActiveTab] = useState("");
-
+  const [selectedYear, setSelectedYear] = useState("2025-2026");
   const menuItems = {
     "Annual Reports": {
       title: "Annual Reports",
@@ -42,25 +42,73 @@ export default function InvestorsPage() {
   ],
 
   files: {
-    "Quarterly Results": [
-      "Quarter 1 Results",
-      "Quarter 2 Results",
-      "Quarter 3 Results",
-      "Quarter 4 Results",
-    ],
+    "Quarterly Results": {
+  "2025-2026": [
+    "Quarter 1 Results 2025",
+    "Quarter 2 Results 2025",
+    "Quarter 3 Results 2025",
+    "Quarter 4 Results 2025",
+  ],
 
-    "Subsidiaries Financials/ Secretarial Audit report": [
-      "Financials of the Subsdiary along with Secretairal Audit report",
-    ],
+  "2024-2025": [
+    "Quarter 1 Results 2024",
+    "Quarter 2 Results 2024",
+    "Quarter 3 Results 2024",
+    "Quarter 4 Results 2024",
+  ],
 
-    "Related Party Transactions": [
-      "Half Yearly RPT disclosure",
-      "Half Yearly RPT disclosure",
-    ],
+  "2023-2024": [
+    "Quarter 1 Results 2023",
+    "Quarter 2 Results 2023",
+    "Quarter 3 Results 2023",
+    "Quarter 4 Results 2023",
+  ],
+},
 
-    "Statement of Deviation & Variation": [
-      "Statement of Deviation and Variation ",
-    ],
+    "Subsidiaries Financials/ Secretarial Audit report": {
+  "2025-2026": [
+    "Financials of the Subsdiary 2025",
+    "Secretairal Audit report 2025",
+  ],
+
+  "2024-2025": [
+    "Financials of the Subsdiary 2024",
+    "Secretairal Audit report 2024",
+  ],
+
+  "2023-2024": [
+    "Financials of the Subsdiary 2023",
+    "Secretairal Audit report 2023",
+  ],
+},
+
+"Related Party Transactions": {
+  "2025-2026": [
+    "Half Yearly RPT disclosure 2025",
+  ],
+
+  "2024-2025": [
+    "Half Yearly RPT disclosure 2024",
+  ],
+
+  "2023-2024": [
+    "Half Yearly RPT disclosure 2023",
+  ],
+},
+
+"Statement of Deviation & Variation": {
+  "2025-2026": [
+    "Statement of Deviation and Variation 2025",
+  ],
+
+  "2024-2025": [
+    "Statement of Deviation and Variation 2024",
+  ],
+
+  "2023-2024": [
+    "Statement of Deviation and Variation 2023",
+  ],
+}, 
   },
 },
 
@@ -75,10 +123,22 @@ export default function InvestorsPage() {
   ],
 
   files: {
-    Reports: [
-      "CG Report for the FY",
-      "Governance Report 2025",
-    ],
+   Reports: {
+  "2025-2026": [
+    "CG Report for the FY 2025",
+    "Governance Report 2025",
+  ],
+
+  "2024-2025": [
+    "CG Report for the FY 2024",
+    "Governance Report 2024",
+  ],
+
+  "2023-2024": [
+    "CG Report for the FY 2023",
+    "Governance Report 2023",
+  ],
+},
 
     "Authorised KMPs for Disclosures": [
       "Authorised KMP List",
@@ -118,7 +178,7 @@ export default function InvestorsPage() {
         "EGM Notice",
         "PCS Compliance Certificate Company Website",
         "Ks Mart fair value Report SEBI ICDR 2018",
-        "Soma Papers fair value Report SEBI ICDR 2018",
+        "Soma Papers fair value Report SEBI ICDR 20101111111111218",
         "Soma Papers fair value Report SEBI SAST 2011",
       ],
     },
@@ -135,20 +195,53 @@ export default function InvestorsPage() {
   ],
 
   files: {
-    "Board Meeting Intimation": [
-      "Board Meeting Intimation ",
-      "Board Meeting Intimation ",
-    ],
+    "Board Meeting Intimation": {
+  "2025-2026": [
+    "Board Meeting Intimation 2025",
+  ],
 
-    "Investor/Analyst Meets": [
-      "Investor Meet Presentation",
-      "Analyst Meeting Schedule",
-    ],
+  "2024-2025": [
+    "Board Meeting Intimation 2024",
+  ],
 
-    "Shareholding Pattern": [
-      "Shareholding Pattern June 2025",
-      "Shareholding Pattern March 2025",
-    ],
+  "2023-2024": [
+    "Board Meeting Intimation 2023",
+  ],
+},
+
+    "Investor/Analyst Meets": {
+  "2025-2026": [
+    "Investor Meet Presentation 2025",
+    "Analyst Meeting Schedule 2025",
+  ],
+
+  "2024-2025": [
+    "Investor Meet Presentation 2024",
+    "Analyst Meeting Schedule 2024",
+  ],
+
+  "2023-2024": [
+    "Investor Meet Presentation 2023",
+    "Analyst Meeting Schedule 2023",
+  ],
+},
+
+    "Shareholding Pattern": {
+  "2025-2026": [
+    "Shareholding Pattern June 2025",
+    "Shareholding Pattern March 2025",
+  ],
+
+  "2024-2025": [
+    "Shareholding Pattern June 2024",
+    "Shareholding Pattern March 2024",
+  ],
+
+  "2023-2024": [
+    "Shareholding Pattern June 2023",
+    "Shareholding Pattern March 2023",
+  ],
+},
 
     "Secretarial Compliance Report": [
       "Secretarial Compliance Report 2025",
@@ -234,9 +327,8 @@ export default function InvestorsPage() {
         description="Financial insights, regulatory disclosures, and shareholder information—clearly organized and easy to access."
       />
 
-      <section className=" text-3xl max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-14">
-        
-        <aside>
+<section className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-4 py-16 grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-25">        
+        <aside className="lg:-ml-8">
           <div className="space-y-3">
             {Object.keys(menuItems).map((item, index) => (
               <button
@@ -264,11 +356,15 @@ export default function InvestorsPage() {
 
             {activeMenu !== "Open Offer" &&
             activeMenu !== "Shareholders Meeting" && (
-            <select className="border border-gray-200 text-black rounded-lg px-4 py-3 text-sm outline-none">
-                <option>2025 - 2026</option>
-                <option>2024 - 2025</option>
-                <option>2023 - 2024</option>
-            </select>
+            <select
+  value={selectedYear}
+  onChange={(e) => setSelectedYear(e.target.value)}
+  className="border border-gray-200 text-black rounded-lg px-4 py-3 text-sm outline-none"
+>
+  <option value="2025-2026">2025 - 2026</option>
+  <option value="2024-2025">2024 - 2025</option>
+  <option value="2023-2024">2023 - 2024</option>
+</select>
         )}
         </div>
 
@@ -291,40 +387,47 @@ export default function InvestorsPage() {
             )}
 
           <div className="mt-10 space-y-5">
-  {(
-    menuItems[activeMenu].tabs
-      ? menuItems[activeMenu].files[
-          activeTab || menuItems[activeMenu].tabs[0]
-        ] || []
-      : menuItems[activeMenu].files || []
-  ).map((file, index) => (
-    <div
-      key={index}
-      className="border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:shadow-md transition duration-300"
-    >
-      <div>
-        <h3 className="text-lg font-semibold text-gray-900">
-          {file}
-        </h3>
-      </div>
-
-      <a
-        href="/sample.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 text-blue-600 px-5 py-3 rounded-xl text-sm font-semibold hover:text-purple-700 transition duration-300 w-fit"
-      >
-        <Download size={18} />
-        .pdf
-      </a>
-    </div>
-  ))}
-
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+            {(
+  menuItems[activeMenu].tabs
+    ? (
+        Array.isArray(
+          menuItems[activeMenu].files[
+            activeTab || menuItems[activeMenu].tabs[0]
+          ]
+        )
+          ? menuItems[activeMenu].files[
+              activeTab || menuItems[activeMenu].tabs[0]
+            ]
+          : menuItems[activeMenu].files[
+              activeTab || menuItems[activeMenu].tabs[0]
+            ]?.[selectedYear] || []
+      )
+    : menuItems[activeMenu].files || []
+).map((file, index) => (
+            <div
+            key={index}
+            className="border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:shadow-md transition duration-300"
+            >
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {file}
+                  </h3>
+                  </div>
+                  <a
+                  href="/sample.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-600 px-5 py-3 rounded-xl text-sm font-semibold hover:text-purple-700 transition duration-300 w-fit"
+                  >
+                    <Download size={18} />
+                    .pdf
+                    </a>
+                    </div>
+                  ))}
+                  </div>
+              </div>
+          </section>
+        <Footer />
     </main>
   );
 }

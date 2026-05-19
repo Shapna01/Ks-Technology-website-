@@ -690,8 +690,7 @@ export default function Hero() {
       </button>
     </div>
   </div>
-</section>
-
+</section> 
       <Footer />
     </>
   );

@@ -150,7 +150,7 @@ export default function AboutPage() {
         Our Journey
       </p>
 
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+      <h2 className="text-2xl sm:text-2xl xl:text-4xl font-bold text-black mt-6 lg:mt-8 leading-tight">
         Building Intelligence Since 2016
       </h2>
     </div>
