@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 export default function PredictiveSection() {
-const [stats, setStats] = useState([]);
-const [features, setFeatures] = useState([]);
+  const [stats, setStats] = useState([]);
+  const [features, setFeatures] = useState([]);
 
   useEffect(() => {
     setStats([
@@ -73,6 +73,34 @@ const [features, setFeatures] = useState([]);
               </div>
             ))}
           </div>
+          <div className="mt-10 space-y-6">
+            {[
+              {
+                label: "Risk Score Confidence",
+                value: "62%",
+                width: "62%",
+              },
+              {
+                label: "Model Completeness",
+                value: "87%",
+                width: "87%",
+              },
+            ].map((item, index) => (
+              <div key={index}>
+                <div className="flex justify-between text-sm text-[#D8C8F2] mb-3">
+                  <p>{item.label}</p>
+                  <p>{item.value}</p>
+                </div>
+
+                <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#C084FC] rounded-full"
+                    style={{ width: item.width }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
 
         </div>
       </div>
@@ -113,6 +141,7 @@ const [features, setFeatures] = useState([]);
             </div>
           ))}
         </div>
+        
 
         <button className="mt-8 sm:mt-10 w-full sm:w-auto border border-[#C084FC] text-[#A855F7] px-8 py-4 rounded-full font-semibold hover:bg-[#F8F3FF] transition duration-300">
           Join Early Access

@@ -162,7 +162,7 @@ export default function ContactPage() {
                     ? "bg-purple-100"
                     : "bg-purple-100"
                 }`}
-              >
+              > 
                 {popupData.type === "success" ? (
                   <CheckCircle2
                     className="text-purple-600"
@@ -210,7 +210,7 @@ export default function ContactPage() {
                 LET&apos;S TALK
               </p>
 
-              <h2 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+              <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-black mt-6 lg:mt-8 leading-tight">
                 Partner With Us
               </h2>
 

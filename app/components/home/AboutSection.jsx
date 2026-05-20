@@ -12,7 +12,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <h2 className="text-[34px] leading-[50px] sm:text-4xl md:text-6xl lg:text-[55px] lg:leading-[74px] font-black text-black max-w-[650px]">
+            <h2 className="text-[34px] leading-[50px] sm:text-4xl md:text-6xl lg:text-[50px] lg:leading-[74px] font-black text-black max-w-[650px]">
               From Infrastructure
               <br />
               to Intelligence

@@ -7,7 +7,7 @@ export default function HeroSection() {
               ✦ Strategic Intelligence Platform
             </div>
 
-            <h1 className="text-[34px] leading-[50px] sm:text-5xl md:text-6xl lg:text-[72px] lg:leading-[82px] font-black text-black">
+            <h1 className="text-[34px] leading-[50px] sm:text-5xl md:text-6xl lg:text-[65px] lg:leading-[82px] font-black text-black">
               Building
               <br />
               <span className="text-[#A855F7]">Intelligence</span>

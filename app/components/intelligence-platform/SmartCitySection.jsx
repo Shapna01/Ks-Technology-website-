@@ -8,7 +8,7 @@ export default function SmartCitySection() {
         </div>
 
         <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-black mt-6 lg:mt-8 leading-tight">
-          Smart City Command Platform
+          Command & control system
         </h2>
 
         <p className="text-gray-500 text-[15px] sm:text-lg leading-7 sm:leading-9 mt-5 sm:mt-7 max-w-[620px]">
@@ -50,10 +50,13 @@ export default function SmartCitySection() {
                 <p className="text-sm sm:text-base lg:text-lg text-gray-500 leading-6 sm:leading-8 mt-2">
                   {item.desc}
                 </p>
+                
               </div>
             </div>
+            
           ))}
         </div>
+        
 
         <button className="mt-8 sm:mt-10 w-full sm:w-auto bg-[#A855F7] hover:bg-[#9333EA] transition text-white px-8 py-4 rounded-full font-semibold shadow-lg">
           Request a Demo
@@ -93,6 +96,39 @@ export default function SmartCitySection() {
                 <p className="text-[#D8C8F2] text-xs sm:text-sm mt-3 leading-5">
                   {item.label}
                 </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 space-y-6">
+            {[
+              {
+                label: "Traffic Systems",
+                value: "62%",
+                width: "62%",
+              },
+              {
+                label: "Safety Systems",
+                value: "87%",
+                width: "87%",
+              },
+              {
+                label: "Utility Systems",
+                value: "87%",
+                width: "87%",
+              },
+            ].map((item, index) => (
+              <div key={index}>
+                <div className="flex justify-between text-sm text-[#D8C8F2] mb-3">
+                  <p>{item.label}</p>
+                  <p>{item.value}</p>
+                </div>
+
+                <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#C084FC] rounded-full"
+                    style={{ width: item.width }}
+                  ></div>
+                </div>
               </div>
             ))}
           </div>

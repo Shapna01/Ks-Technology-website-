@@ -51,7 +51,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <h2 className="text-[24px] leading-[40px] sm:text-4xl md:text-6xl lg:text-[55px] lg:leading-[72px] font-black text-black px-4">
+          <h2 className="text-[24px] leading-[40px] sm:text-4xl md:text-6xl lg:text-[50px] lg:leading-[72px] font-black text-black px-4">
             Where Intelligence Meets Governance
           </h2>
 
@@ -75,7 +75,7 @@ export default function AboutSection() {
                 {item.icon}
               </div>
 
-              <h3 className="relative z-10 text-white text-[24px] leading-[32px] sm:text-[28px] sm:leading-[38px] lg:text-[34px] lg:leading-[42px] font-bold mt-10 max-w-[420px]">
+              <h3 className="relative z-10 text-white text-[24px] leading-[32px] sm:text-[28px] sm:leading-[38px] lg:text-[28px] lg:leading-[42px] font-bold mt-10 max-w-[420px]">
                 {item.title}
               </h3>
 

@@ -69,7 +69,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <h2 className="text-[28px] leading-[38px] sm:text-4xl md:text-5xl lg:text-[55px] lg:leading-[72px] font-black text-black px-2">
+          <h2 className="text-[28px] leading-[38px] sm:text-4xl md:text-5xl lg:text-[50px] lg:leading-[72px] font-black text-black px-2">
             Intelligence in Action
           </h2>
 

@@ -108,6 +108,40 @@ export default function UrbanPlatformSection() {
                 </p>
               </div>
             ))}
+            
+          </div>
+          <div className="mt-10 space-y-6">
+            {[
+              {
+                label: "Signal Violations",
+                value: "62%",
+                width: "62%",
+              },
+              {
+                label: "Speed Violations",
+                value: "87%",
+                width: "87%",
+              },
+              {
+                label: "Safety Violations",
+                value: "87%",
+                width: "87%",
+              },
+            ].map((item, index) => (
+              <div key={index}>
+                <div className="flex justify-between text-sm text-[#D8C8F2] mb-3">
+                  <p>{item.label}</p>
+                  <p>{item.value}</p>
+                </div>
+
+                <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#C084FC] rounded-full"
+                    style={{ width: item.width }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -77,7 +77,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-black mt-6 lg:mt-8 leading-tight">
+          <h2 className="text-[24px] leading-[40px] sm:text-4xl md:text-6xl lg:text-[50px] lg:leading-[72px] font-black text-black px-4">
             The Intelligence Architecture
           </h2>
 
